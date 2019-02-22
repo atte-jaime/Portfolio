@@ -143,6 +143,19 @@ header #menu p:hover {
 }
 
 .about {
+  background-color: #FF6666;
+  min-width: 100vw;
+  height: 100vh;
+}
+
+.work {
+  background-color: #FFCC66;
+  min-width: 100vw;
+  height: 100vh;
+}
+
+.info {
+  background-color: #6666FF;
   min-width: 100vw;
   height: 100vh;
 }

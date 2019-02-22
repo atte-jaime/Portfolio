@@ -154,6 +154,24 @@ header {
 // ---------------- ABOUT ---------------------
 
 .about{
+  background-color: $red;
   min-width: 100vw;
   height: 100vh;
 }
+
+// ---------------- WORK ---------------------
+
+.work{  
+  background-color: $yellow;
+  min-width: 100vw;
+  height: 100vh;
+}
+
+// ---------------- INFO ---------------------
+
+.info{
+  background-color: $blue;
+  min-width: 100vw;
+  height: 100vh;
+}
+
