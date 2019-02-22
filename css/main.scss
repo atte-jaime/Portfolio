@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('/fonts/style.css');
+
+// ------------------------- FONTS --------------------------------------
+
+$brandon: 'Brandon Grotesque',
+'Arial',
+sans-serif;
+
+$lato: 'Lato',
+'Arial',
+sans-serif;
+
+// ------------------------- COLORS -------------------------------------
+
+$yellow: #FFCC66;
+$blue: #6666FF;
+$red: #FF6666;
+$white: #ffffff;
+$black: #000000;
+
+// ------------------------- HEADER -------------------------------------
+
+header {
+  position: fixed;
+  background-color: $black;
+  height: 100px;
+  width: 100vw;
+  margin: auto;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  a{
+    text-decoration: none;
+  }
+
+  #menu {
+    width: 25%;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+    img {
+      width: 28px;
+      height: 65px;
+    }
+
+    p {
+      font-size: 14px;
+      color: $white;
+      font-family: $brandon;
+      font-weight: bold;
+      transition: all 0.3s;
+
+      &:hover{
+        color: $yellow;
+      }
+    }
+  }
+
+}
