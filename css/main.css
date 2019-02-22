@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 @import url("/fonts/style.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 header {
+  z-index: 99;
   position: fixed;
-  background-color: #000000;
   height: 100px;
   width: 100vw;
   margin: auto;
@@ -42,20 +51,99 @@ header #menu {
 }
 
 header #menu img {
-  width: 28px;
+  width: 27px;
   height: 65px;
 }
 
 header #menu p {
-  font-size: 14px;
+  font-size: 1rem;
   color: #ffffff;
   font-family: "Brandon Grotesque", "Arial", sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 header #menu p:hover {
   color: #FFCC66;
+}
+
+.landing {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.landing .fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing .fullscreen-video-wrap video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.landing .overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000000;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.landing .content {
+  padding-top: 35rem;
+  margin: auto;
+}
+
+.landing .content .reel-button {
+  background-color: transparent;
+  border-radius: 28px;
+  border: 2px solid #FFCC66;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFCC66;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 1rem;
+  padding: 11px 60px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.landing .content .reel-button:hover {
+  border: 2px solid #FF6666;
+  color: #FF6666;
+}
+
+.landing .content .reel-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.about {
+  min-width: 100vw;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */
